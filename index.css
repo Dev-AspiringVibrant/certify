@@ -1,0 +1,62 @@
+/* Important */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    transition-duration: 1s !important;
+    font-family: Cabin;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, orange, green);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Items */
+main {
+    text-align: center;
+    background-color: white;
+    padding: 2em;
+    border-radius: 3em;
+    border: solid 1em black;
+}
+
+.option {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.clickables {
+    margin: 2em;
+    border: solid 1em;
+    padding: 10px;
+}
+.clickables:hover {
+    background-color: blue;
+    border: dashed 1em;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Image */
+img {
+    width: 300px;
+    height: 170px;
+}
+
+.themiddleone {
+    width: 170px;
+}
