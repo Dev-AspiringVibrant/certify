@@ -4,6 +4,13 @@ html {
     font-family: arial;
 }
 
+img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -13,11 +20,19 @@ body {
     border: solid black 1px;
 }
 
-#name, #details {
+.cer-of, .prs-to, #name, #details {
+    transform: translateY(200px);
+}
+
+#name, #details, #signature, #act {
     transition: 1s;
     cursor: pointer;
+    text-decoration: underline;
 }
-#name:hover, #details:hover {
+#act {
+    text-decoration: none;
+}
+#name:hover, #details:hover, #signature:hover, #act:hover {
     padding: 1em;
     background-color: black;
     color: white;
@@ -34,12 +49,13 @@ body {
 #time {
     display: flex;
     align-items: center;
+    text-decoration: underline;
 }
 
 .flex {
     display: flex;
     width: 85%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: absolute;
     bottom: 10em;
 }

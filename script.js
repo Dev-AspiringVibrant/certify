@@ -1,7 +1,7 @@
 const timeGet = new Date();
-const month = timeGet.getUTCMonth() + 1
-const day = timeGet.getUTCDay();
-const year = timeGet.getUTCFullYear();
+const month = timeGet.getMonth() + 1;
+const day = timeGet.getDay();
+const year = timeGet.getFullYear();
 
 document.getElementById("time").innerHTML = month + " - " + day + " - " + year;
 
@@ -39,4 +39,40 @@ if (!localStorage.getItem("details")) {
 } else {
     const storedDetails = localStorage.getItem("details");
     detailsGet.textContent = `${storedDetails}`;
+}
+
+let signatureGet = document.getElementById("signature");
+
+function changeSignature() {
+    const newSignature = prompt("Who is giving this award?");
+    if (!newSignature) {
+        changeSignature();
+    } else {
+        localStorage.setItem("signature", newSignature);
+        signatureGet.textContent = `${newSignature}`;
+    }
+}
+if (!localStorage.getItem("signature")) {
+    changeSignature();
+} else {
+    const storedDetails = localStorage.getItem("details");
+    signatureGet.textContent = `${storedDetails}`;
+}
+
+let actGet = document.getElementById("act");
+
+function changeAct() {
+    const newAct = prompt("What are you winning?");
+    if (!newAct) {
+        changeAct();
+    } else {
+        localStorage.setItem("act", newAct);
+        actGet.textContent = `${newAct}`;
+    }
+}
+if (!localStorage.getItem("act")) {
+    changeAct();
+} else {
+    const storedAct = localStorage.getItem("act");
+    signatureGet.textContent = `${storedAct}`;
 }
