@@ -1,7 +1,7 @@
 const timeGet = new Date();
-const month = timeGet.getMonth() + 1;
-const day = timeGet.getDay();
-const year = timeGet.getFullYear();
+const month = timeGet.getUTCMonth() + 1;
+const day = timeGet.getUTCDate();
+const year = timeGet.getUTCFullYear();
 
 document.getElementById("time").innerHTML = month + " - " + day + " - " + year;
 
@@ -76,3 +76,15 @@ if (!localStorage.getItem("act")) {
     const storedAct = localStorage.getItem("act");
     signatureGet.textContent = `${storedAct}`;
 }
+
+window.addEventListener("load", function() {
+    document.querySelector("input[type='file']").addEventListener("change", function() {
+        if (this.files && this.files[0]) {
+            let img = document.querySelector("img");
+            img.onload = () => {
+                URL.revokeObjectURL(img.src);
+            }
+            img.src = URL.createObjectURL(this.files[0]);
+        }
+    })
+});

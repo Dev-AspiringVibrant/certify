@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+html {
+    font-family: arial;
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.badge {
+    position: absolute;
+    left: 23%;
+    bottom: 25%;
+    width: 400px;
+}
+.cart {
+    position: absolute;
+    width: 200px;
+    top: 100px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cer-of, .prs-to, #name, #details {
+    transform: translateY(200px);
+}
+
+#name, #details, #signature, #act {
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#act {
+    text-decoration: none;
+}
+#name:hover, #details:hover, #signature:hover, #act:hover {
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+}
+
+#signature {
+    font-family: "Hurricane", serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#time {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+    width: 85%;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 10em;
+}
+
+.file {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    opacity: 0;
+    padding: 3em;
+    transition: 1s;
+    scale: 1;
+}
+.file:hover {
+    opacity: 100%;
+    scale: 1.1;
+}
