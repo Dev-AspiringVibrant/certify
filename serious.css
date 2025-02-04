@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
 html {
     font-family: arial;
 }
@@ -9,4 +11,35 @@ body {
     align-items: center;
     height: 99vh;
     border: solid black 1px;
+}
+
+#name, #details {
+    transition: 1s;
+    cursor: pointer;
+}
+#name:hover, #details:hover {
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+}
+
+#signature {
+    font-family: "Hurricane", serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#time {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10em;
 }
