@@ -76,3 +76,15 @@ if (!localStorage.getItem("act")) {
     const storedAct = localStorage.getItem("act");
     actGet.textContent = `${storedAct}`;
 }
+
+window.addEventListener("load", function() {
+    document.querySelector("input[type='file']").addEventListener("change", function() {
+        if (this.files && this.files[0]) {
+            let img = document.getElementById("badge");
+            img.onload = () => {
+                URL.revokeObjectURL(img.src);
+            }
+            img.src = URL.createObjectURL(this.files[0]);
+        }
+    })
+});
