@@ -74,5 +74,5 @@ if (!localStorage.getItem("act")) {
     changeAct();
 } else {
     const storedAct = localStorage.getItem("act");
-    signatureGet.textContent = `${storedAct}`;
+    actGet.textContent = `${storedAct}`;
 }
