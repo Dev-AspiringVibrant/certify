@@ -55,8 +55,8 @@ function changeSignature() {
 if (!localStorage.getItem("signature")) {
     changeSignature();
 } else {
-    const storedDetails = localStorage.getItem("details");
-    signatureGet.textContent = `${storedDetails}`;
+    const storedSignature = localStorage.getItem("details");
+    signatureGet.textContent = `${storedSignature}`;
 }
 
 let actGet = document.getElementById("act");
