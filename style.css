@@ -18,7 +18,7 @@ html {
 }
 .cart {
     position: absolute;
-    width: 200px;
+    width: 160px;
     top: 100px;
 }
 
@@ -69,10 +69,22 @@ body {
     bottom: 10em;
 }
 
-.file {
+.m-badge {
     position: absolute;
     right: 25%;
     top: 50%;
+    transition-duration: 1s;
+    opacity: 0;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.m-logo {
+    position: absolute;
+    right: 25%;
+    top: 36%;
     transition-duration: 1s;
     opacity: 0;
     padding: 3em;
