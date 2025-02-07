@@ -71,7 +71,7 @@ body {
 
 .m-badge {
     position: absolute;
-    right: 25%;
+    right: 2%;
     top: 50%;
     transition-duration: 1s;
     opacity: 0;
@@ -83,7 +83,7 @@ body {
 }
 .m-logo {
     position: absolute;
-    right: 25%;
+    right: 2%;
     top: 36%;
     transition-duration: 1s;
     opacity: 0;
