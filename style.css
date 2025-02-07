@@ -14,7 +14,7 @@ html {
     /* position: absolute; */
     /* left: 23%; */
     /* bottom: 25%; */
-    width: 300px;
+    height: 240px;
     transform: translateY(200px);
 }
 .cart {
@@ -97,4 +97,19 @@ body {
 .file:hover {
     scale: 1.1;
     opacity: 100%;
+}
+
+.print {
+    position: absolute;
+    bottom: 11%;
+    padding: 1em;
+    background-color: rgba(246, 246, 246, 0.788);
+    font-weight: 700;
+}
+.print:hover {
+    width: 6em;
+}
+
+@media print {
+    .print {display: none;}
 }
