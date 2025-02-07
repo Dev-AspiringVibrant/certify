@@ -11,10 +11,11 @@ html {
     z-index: -1;
 }
 .badge {
-    position: absolute;
-    left: 23%;
-    bottom: 25%;
-    width: 400px;
+    /* position: absolute; */
+    /* left: 23%; */
+    /* bottom: 25%; */
+    width: 300px;
+    transform: translateY(200px);
 }
 .cart {
     position: absolute;
