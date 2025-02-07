@@ -26,7 +26,7 @@ if (!localStorage.getItem("name")) {
 let detailsGet = document.getElementById("details");
 
 function changeDetails() {
-    const newDetails = prompt("What do you want to be awarded for?");
+    const newDetails = prompt("How did you win this award?");
     if (!newDetails) {
         changeDetails();
     } else {
