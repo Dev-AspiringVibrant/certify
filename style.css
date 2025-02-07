@@ -19,7 +19,7 @@ html {
 }
 .cart {
     position: absolute;
-    width: 160px;
+    height: 100px;
     top: 100px;
 }
 
